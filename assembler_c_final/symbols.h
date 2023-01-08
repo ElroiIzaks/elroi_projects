@@ -4,13 +4,13 @@
 #ifndef SYMMB_STRUCTS
 #define SYMMB_STRUCTS
 
-typedef struct 
+typedef struct
 {
     boolean code;
     boolean data;
     boolean entry;
     boolean external;
-}attributes_table;
+} attributes_table;
 
 typedef struct symbol
 {
@@ -22,9 +22,9 @@ typedef struct symbol
 #endif
 
 symbols_table **new_symbols_table();
-void add_symbol(symbols_table **,char *,int ,char *);
-int find_symbol(symbols_table **,char *);
-int find_symbol_by_index(symbols_table **,char *);
+void add_symbol(symbols_table **, char *, int, char *);
+int find_symbol(symbols_table **, char *);
+int find_symbol_by_index(symbols_table **, char *);
 void add_attribute(attributes_table *, char *);
 void new_attributes_table(attributes_table *);
 void print_symbol_table(symbols_table **);
